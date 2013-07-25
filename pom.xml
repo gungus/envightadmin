@@ -11,6 +11,7 @@
 
 	<properties>
 		<grails.version>2.1.1</grails.version>
+		<tomcat.cargo.home>/platform/envight/tomcat</tomcat.cargo.home>
 	</properties>
 
 	<dependencies>
@@ -59,34 +60,8 @@
 		</dependency>
 	</dependencies>
 
-	<pluginRepositories>
-		<pluginRepository>
-			<id>sonatype-oss-public</id>
-			<url>https://oss.sonatype.org/content/groups/public</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</pluginRepository>
-	</pluginRepositories>
-
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>com.jelastic</groupId>
-				<artifactId>jelastic-maven-plugin</artifactId>
-				<version>1.7</version>
-				<configuration>
-					<email>${jelastic.username}</email>
-					<password>${jelastic.password}</password>
-					<context>${jelastic.context}</context>
-					<environment>${jelastic.environment}</environment>
-					<api_hoster>app.jelastic.elastx.net</api_hoster>
-				</configuration>
-			</plugin>
-
 			<!-- Disables the Maven surefire plugin for Grails applications, as we 
 				have our own test runner -->
 			<plugin>
@@ -135,6 +110,7 @@
 				</configuration>
 				<extensions>true</extensions>
 			</plugin>
+
 		</plugins>
 	</build>
 
@@ -170,6 +146,5 @@
 				</dependency>
 			</dependencies>
 		</profile>
-
 	</profiles>
 </project>
