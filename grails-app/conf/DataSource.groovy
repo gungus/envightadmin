@@ -11,6 +11,7 @@ hibernate {
 }
 // environment specific settings
 environments {
+	// @TODO: need to move these configs out to separate maven configuration deploys. 
     development {
         dataSource {
             dbCreate = "create-drop" // one of 'create', 'create-drop','update'
@@ -20,7 +21,7 @@ environments {
     test {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:mysql://localhost:3306/envight?useUnicode=true&amp;characterEncoding=utf8"
+            url = "jdbc:mysql://mysql-envight-test.jelastic.elastx.net:3306/envight?useUnicode=true&amp;characterEncoding=utf8"
 			driverClassName = "com.mysql.jdbc.Driver"
             username = "envight"
             password = "envight"
@@ -28,8 +29,8 @@ environments {
     }
     production {
         dataSource {
-            dbCreate = "create"
-            url = "jdbc:mysql://localhost:3306/envight?useUnicode=true&amp;characterEncoding=utf8"
+            dbCreate = "update"
+            url = "jdbc:mysql://mysql-envight-test.jelastic.elastx.net:3306/envight?useUnicode=true&amp;characterEncoding=utf8"
 			driverClassName = "com.mysql.jdbc.Driver"
             username = "envight"
             password = "envight"
