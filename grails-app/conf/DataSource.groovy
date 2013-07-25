@@ -21,7 +21,8 @@ environments {
     test {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:mysql://mysql-envight-test.jelastic.elastx.net:3306/envight?useUnicode=true&amp;characterEncoding=utf8"
+            url = "jdbc:mysql://localhost:3306/envight?useUnicode=true&amp;characterEncoding=utf8"
+            //url = "jdbc:mysql://mysql-envight-test.jelastic.elastx.net:3306/envight?useUnicode=true&amp;characterEncoding=utf8"
 			driverClassName = "com.mysql.jdbc.Driver"
             username = "envight"
             password = "envight"
@@ -30,7 +31,8 @@ environments {
     production {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:mysql://mysql-envight-test.jelastic.elastx.net:3306/envight?useUnicode=true&amp;characterEncoding=utf8"
+            url = "jdbc:mysql://localhost:3306/envight?useUnicode=true&amp;characterEncoding=utf8"
+            //url = "jdbc:mysql://mysql-envight-test.jelastic.elastx.net:3306/envight?useUnicode=true&amp;characterEncoding=utf8"
 			driverClassName = "com.mysql.jdbc.Driver"
             username = "envight"
             password = "envight"
