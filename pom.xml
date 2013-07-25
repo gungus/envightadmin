@@ -114,6 +114,14 @@
 		</plugins>
 	</build>
 
+	<distributionManagement>
+		<repository>
+			<id>gungus</id>
+			<name>Gungus central repository</name>
+			<url>http://gungus-nexus.jelastic.elastx.net/nexus/content/repositories/releases</url>
+		</repository>
+	</distributionManagement>
+
 	<repositories>
 		<repository>
 			<id>grails</id>
