@@ -114,6 +114,12 @@
 		</plugins>
 	</build>
 
+	<scm>
+		<connection>scm:git:ssh://git@github.com/gungus/envightadmin.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/gungus/envightadmin.git</developerConnection>
+		<url>https://github.com/gungus/envightadmin.git</url>
+	</scm>
+
 	<distributionManagement>
 		<repository>
 			<id>gungus</id>
