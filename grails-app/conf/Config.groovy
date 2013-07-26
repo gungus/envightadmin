@@ -45,18 +45,7 @@ grails.logging.jul.usebridge = true
 grails.spring.bean.packages = []
 
 // set per-environment serverURL stem for creating absolute links
-environments {
-    production {
-        grails.serverURL = "http://localhost:8080/${appName}"
-    }
-    development {
-        grails.serverURL = "http://localhost:8080/${appName}"
-    }
-    test {
-        grails.serverURL = "http://localhost:8080/${appName}"
-    }
-
-}
+grails.config.locations = [ "file:${userHome}/.grails/${appName}-config.groovy", "file:${userHome}/.grails/${appName}-datasources.groovy" ]
 
 // log4j configuration
 log4j = {
