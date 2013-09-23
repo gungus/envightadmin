@@ -4,7 +4,7 @@
 	<groupId>com.envight.admin</groupId>
 	<artifactId>envightadmin</artifactId>
 	<packaging>grails-app</packaging>
-	<version>0.1-RC2</version>
+	<version>0.1-SNAPSHOT</version>
 	<name>${project.artifactId}</name>
 	<description>envightadmin</description>
 
