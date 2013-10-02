@@ -9,6 +9,7 @@
 	<description>envightadmin</description>
 
 	<properties>
+		<scmVersion>1.9.0</scmVersion>
 		<grails.version>2.1.1</grails.version>
 		<tomcat.cargo.home>/platform/envight/tomcat</tomcat.cargo.home>
 	</properties>
