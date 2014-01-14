@@ -88,8 +88,8 @@
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-scm-plugin</artifactId>
-				<version>1.8.1</version>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.3</version>
 				<configuration>
 					<providerImplementations>
 						<git>jgit</git>
@@ -99,14 +99,27 @@
 					<dependency>
 						<groupId>org.apache.maven.scm</groupId>
 						<artifactId>maven-scm-provider-jgit</artifactId>
-						<version>1.8.1</version>
+						<version>1.9</version>
 					</dependency>
 				</dependencies>
 			</plugin>
 			<plugin>
+				<!-- http://maven.apache.org/scm-archives/scm-LATEST/maven-scm-providers/maven-scm-providers-git/maven-scm-provider-jgit/ -->
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-release-plugin</artifactId>
-				<version>2.3</version>
+				<artifactId>maven-scm-plugin</artifactId>
+				<version>1.9</version>
+				<configuration>
+					<providerImplementations>
+						<git>jgit</git>
+					</providerImplementations>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>org.apache.maven.scm</groupId>
+						<artifactId>maven-scm-provider-jgit</artifactId>
+						<version>1.9</version>
+					</dependency>
+				</dependencies>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -140,8 +153,8 @@
 	</build>
 
 	<scm>
-		<connection>scm:git:ssh://git@github.com/gungus/envightadmin.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com/gungus/envightadmin.git</developerConnection>
+		<connection>scm:jgit:ssh://git@github.com/gungus/envightadmin.git</connection>
+		<developerConnection>scm:jgit:ssh://git@github.com/gungus/envightadmin.git</developerConnection>
 		<url>https://github.com/gungus/envightadmin.git</url>
 	</scm>
 
